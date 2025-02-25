@@ -1,0 +1,11 @@
+id,tanggal,nama,foto,harga
+exp001,2025-02-15,Pembelian ATK,exp001.jpg,150000
+exp002,2025-02-18,Konsumsi Rapat,exp002.jpg,275000
+exp003,2025-02-20,Biaya Fotokopi,exp003.jpg,85000
+exp004,2025-02-22,Sumbangan Sosial,exp004.jpg,500000
+exp005,2025-02-25,Perbaikan Printer,exp005.jpg,350000
+exp006,2025-01-10,Biaya Transport,exp006.jpg,200000
+exp007,2025-01-15,Pembelian Kertas,exp007.jpg,120000
+exp008,2025-01-20,Konsumsi Acara,exp008.jpg,450000
+exp009,2025-01-28,Biaya Internet,exp009.jpg,300000
+exp010,2025-01-30,Sewa Ruangan,exp010.jpg,750000
