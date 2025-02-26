@@ -1,5 +1,5 @@
 import { createResource, createSignal, createMemo, Show, For } from "solid-js";
-import { readCSV } from "~/utils/csvParser";
+import { readCSV } from "../utils/csvParser";
 
 interface CSVRow {
   no: string;
@@ -43,7 +43,7 @@ const formatDate = (dateStr: string): string => {
 
 const fetchCSVData = async (): Promise<CSVRow[]> => {
   try {
-    const response = await fetch("/data.csv");
+    const response = await fetch("data.csv");
     if (!response.ok) throw new Error("Failed to fetch CSV data");
     const text = await response.text();
     return readCSV(text) as CSVRow[];
@@ -247,7 +247,7 @@ export default function CashManagement() {
         <div class="w-full md:w-3/5 bg-white rounded-lg shadow-md p-6">
           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
             <h1 class="text-2xl font-bold text-gray-800">
-              Kas {selectedMonth() ? formatMonthYear(selectedMonth()!) : "Semua Bulan"}
+              Kas {selectedMonth() ? formatMonthYear(selectedMonth()!) : "Pilih bulan"}
             </h1>
             
             <div class="flex flex-wrap gap-2">
